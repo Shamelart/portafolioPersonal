@@ -20,50 +20,57 @@
 <body>
     <!-- Seccion Inicio-->
     <section id="home">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <h1>//ShamelArt//</h1>
-                    <nav id="nav" class="responsive">
-                        <div class="navbar navbar-expand-sm navbar-dark">
-                            <div class="container-fluid justify-content-end">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#opciones">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="opciones">
-                                    <ul>
-                                        <li><a href="#home" class="selected">Home</a></li>
-                                        <li><a href="#aboutMe">About Me</a></li>
-                                        <li><a href="#service">Services</a></li>
-                                        <li><a href="#skills">Skills</a></li>
-                                        <li><a href="#portfolio">Portfolio</a></li>
-                                        <li><a href="#contacs">Contacs</a></li>
-                                    </ul>
+        <div>
+            <div class="contenido">
+                <header>
+                    <div class="contenido-header">
+                        <h1>//ShamelArt//</h1>
+                        <nav id="nav" class="responsive">
+                            <div class="navbar navbar-expand-sm navbar-dark">
+                                <div class="container-fluid justify-content-end">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#opciones">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="opciones">
+                                        <ul>
+                                            <li><a href="#home" class="selected">Home</a></li>
+                                            <li><a href="#aboutMe">About Me</a></li>
+                                            <li><a href="#skills">Skills</a></li>
+                                            <li><a href="#service">Services</a></li>
+                                            <li><a href="#portfolio">Portfolio</a></li>
+                                            <li><a href="#contacs">Contacs</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                    </nav>
-
-                    </nav>
-                    <!--Icons de las redes sociales-->
-                    <div class="redes-sociales">
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        </nav>
+    
+                        </nav>
+                        <!--Icons de las redes sociales-->
+                        <div class="redes-sociales">
+                            <a href="https://api.whatsapp.com/send?phone=+542617548707&text=Hola, Nececito mas informacion!"
+                                target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://linkedin.com/in/shamela-chadee/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/shamelart" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
+                </header>
+                <div class="presentacion">
+                    <p class="bienvenida">Welcome</p>
+                    <h2>I am Shamela Chadee <span>, Frontend</span></h2>
+                    <p class="descripcion"> Hello, my name is Shamela Chadee. I consider myself a dynamic, creative,
+                        organized person, I like to work in a team, I am capable of facing new challenges, I work under
+                        pressure, I like to learn new things.
+    
+                        In my free time I like to go running and take care of my pets, I really enjoy being at home and I
+                        love gardening.</p>
+                    <a href="#portfolio">PORTFOLIO</a>
                 </div>
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida">Welcome</p>
-                <h2>I am Shamela Chadee <span>, Frontend</span></h2>
-                <p class="descripcion"> Hello, my name is Shamela Chadee. I consider myself a dynamic, creative,
-                    organized person, I like to work in a team, I am capable of facing new challenges, I work under
-                    pressure, I like to learn new things.
-
-                    In my free time I like to go running and take care of my pets, I really enjoy being at home and I
-                    love gardening.</p>
-                <a href="#portfolio">PORTFOLIO</a>
             </div>
-        </div>
+
+        </div>        
     </section>
     <section id="aboutMe">
         <div class="contenedor-foto">
@@ -78,26 +85,6 @@
                 I am creative and have knowledge of design.</p>
             <a href="#">View My Cv</a>
         </div>
-    </section>
-
-    <section id="service">
-        <h3 class="title">MIS SERVICIOS</h3>
-        <div class="fila">
-            <div class="service">
-                <spam class="icono"><i class="fa-solid fa-code"></i></spam>
-                <h4>Web Desing</h4>
-                <hr>
-                <ul class="tagService">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
-                </ul>
-                <p>Design of creative website, updated with the new market
-                    trends and optimized words for SEO
-                    positioning.</p>
-            </div>
-        </div>
-
     </section>
 
     <div class="skillsContainer" id="skills">
@@ -162,6 +149,25 @@
             </div>
         </div>
     </div>
+
+    <section id="service">
+        <h3 class="title">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="service">
+                <spam class="icono"><i class="fa-solid fa-code"></i></spam>
+                <h4>Web Desing</h4>
+                <hr>
+                <ul class="tagService">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Design of creative website, updated with the new market
+                    trends and optimized words for SEO
+                    positioning.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="portfolio">
         <h3 class="title">My Proyects</h3>
@@ -238,7 +244,7 @@
                     <textarea name="" id="" cols="30" rows="10" placeholder="tu mensaje..."
                         class="input-full"></textarea>
                 </div>
-                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+                <input type="submit" value="SEND" class="btn-send">
             </form>
         </div>
     </section>
@@ -247,6 +253,9 @@
     <footer>
         <p>Todos los derechos reservados</p>
         <div class="redes">
+            <a href="https://api.whatsapp.com/send?phone=+542617548707&text=Hola, Nececito mas informacion!"
+                target="_blank">
+                <i class="fa-brands fa-whatsapp"></i></a>
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
             <a href=""><i class="fa-brands fa-github"></i></a>
         </div>

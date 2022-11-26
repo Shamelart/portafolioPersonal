@@ -12,13 +12,35 @@ html {
 }
 
 #home {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./imagenes/home2.jpg");
+    height: 100vh;
+    background-image: (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(./imagenes/img.jpg);
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+    background-size: 400% 300%;
+    animation: bgGradient 5s ease infinite;
+
 }
 
-#home .contenido header {
+@keyframes bgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#home div{
+    background: transparent;
+    background-color: transparent ;
+}
+
+#home div .contenido header {
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     width: 100%;
@@ -27,7 +49,7 @@ html {
 
 }
 
-#home .contenido header .contenido-header {
+#home div .contenido header .contenido-header {
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -36,7 +58,7 @@ html {
     align-items: center;
 }
 
-#home .contenido header .contenido-header h1 {
+#home div .contenido header .contenido-header h1 {
     font-family: "Montserrat", sans-serif;
     color: #ff5080;
     font-size: 1.5em;
@@ -44,7 +66,7 @@ html {
     margin-top: 0;
 }
 
-#home .contenido header .contenido-header nav ul {
+#home  div .contenido header .contenido-header nav ul {
     list-style: none;
     display: flex;
     margin-bottom: 0;
@@ -52,7 +74,7 @@ html {
 }
 
 
-#home .contenido header .contenido-header nav ul li a {
+#home div .contenido header .contenido-header nav ul li a {
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     color: #fff;
@@ -61,31 +83,31 @@ html {
     transition: 0.5s;
 }
 
-#home .contenido header .contenido-header nav ul li a:hover {
+#home div .contenido header .contenido-header nav ul li a:hover {
     color: #ff5080;
 }
 
-#home .contenido header .contenido-header nav ul li .selected {
+#home div .contenido header .contenido-header nav ul li .selected {
     color: #ff5080;
 }
 
-#home .contenido header .contenido-header nav ul li .selected:hover {
+#home div .contenido header .contenido-header nav ul li .selected:hover {
     color: #fff;
 
 }
 
-#home .contenido header .contenido-header .redes-sociales a {
+#home div .contenido header .contenido-header .redes-sociales a {
     color: #fff;
     margin-left: 10px;
-    
+
 }
 
-#home .contenido header .contenido-header .redes-sociales a:hover {
+#home div .contenido header .contenido-header .redes-sociales a:hover {
     color: #ff5080;
     transition: 0.5s;
 }
 
-#home .contenido .presentacion {
+#home div .contenido .presentacion {
     max-width: 1100px;
     height: 100vp;
     margin: auto;
@@ -96,21 +118,21 @@ html {
     justify-content: center;
 }
 
-#home .contenido .presentacion .bienvenida {
+#home div .contenido .presentacion .bienvenida {
     font-size: 40px;
     margin-top: 120px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
-#home .contenido .presentacion h2 {
+#home div .contenido .presentacion h2 {
     font-size: 40px;
     text-align: center;
     max-width: 700px;
     margin: 50px auto;
 }
 
-#home .contenido .presentacion h2 span {
+#home div .contenido .presentacion h2 span {
     color: #ff5080;
     max-width: 700px;
     font-size: 40px;
@@ -118,16 +140,16 @@ html {
     margin: 50px auto;
 }
 
-#home .contenido .presentacion .decripcion {
+#home div .contenido .presentacion .decripcion {
     max-width: 700px;
     text-align: center;
     margin: 50px auto;
 }
 
-#home .contenido .presentacion a {
+#home div .contenido .presentacion a {
     text-decoration: none;
     display: inline-block;
-    margin: 70px;
+    margin: 60px;
     padding: 20px 25px;
     border: 2px solid #fff;
     border-radius: 50px;
@@ -137,17 +159,11 @@ html {
     transition: 0.5s;
 }
 
-#home .contenido .presentacion a:hover {
+#home div .contenido .presentacion a:hover {
     background-color: #ff5080;
 }
 
-#icono-nav {
-    color: #fff;
-    display: none;
-}
-
 /* Secction About me */
-
 #aboutMe {
     max-width: 1100px;
     margin: auto;
@@ -225,6 +241,10 @@ html {
 }
 
 #service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
     background-color: #f3f3f3;
     height: 100vh;
@@ -234,6 +254,7 @@ html {
 #service .title {
     font-size: 22px;
     text-transform: uppercase;
+    margin-top: 50px;
     color: #111135;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
@@ -246,7 +267,7 @@ html {
     justify-content: center;
     justify-items: center;
     max-width: 1100px;
-    margin: 30px;
+
 }
 
 #service .fila .service {
@@ -299,7 +320,7 @@ html {
 }
 
 .skillsContainer {
-    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), url("./imagenes/home2.jpg");
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.07)), url("./imagenes/home2.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -319,6 +340,7 @@ html {
 
 .skillsContainer .skill .info {
     display: flex;
+    font-weight: bold;
     justify-content: space-between;
 }
 
@@ -515,7 +537,7 @@ html {
 }
 
 #contacs .title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
@@ -534,14 +556,9 @@ html {
     margin-bottom: 15px;
 }
 
-#contacs .form-Container .mitad {
-    display: flex;
-    justify-content: space-between;
-}
-
 #contacs .form-Container input,
 #contacs .form-Container textarea {
-    padding: 20px;
+    padding: 5px;
     border-radius: 20px;
     border: none;
     border: 1px solid #919191;
@@ -555,17 +572,16 @@ html {
     width: 100%;
 }
 
-#contacs .btn-enviar {
+#contacs .btn-send {
     display: block;
     margin: auto;
     cursor: pointer;
     transition: 0.5s;
-    padding: 10px 15px;
     font-size: 18px;
     font-weight: bold;
 }
 
-#contacs .btn-enviar:hover {
+#contacs .btn-send:hover {
     background-color: #ff5080;
     color: #fff;
 }
