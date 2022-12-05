@@ -13,12 +13,7 @@ html {
 
 #home {
     height: 100vh;
-    background-image: (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(./imagenes/img.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-size: 400% 300%;
-    animation: bgGradient 5s ease infinite;
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imagenes/img.jpg);
 }
 
 @keyframes bgGradient {
@@ -35,9 +30,12 @@ html {
     }
 }
 
-#home div{
-    background: transparent;
-    background-color: transparent ;
+#home div {
+    background: linear-gradient(90deg, rgba(84, 0, 10, 0.178) 1%, rgba(1, 0, 46, 0.103) 52%, rgba(0, 132, 255, 0.034) 100%);
+    background-size: cover;
+    background-position: center center;
+    background-size: 400% 300%;
+    animation: bgGradient 5s ease infinite;
 }
 
 #home div .contenido header {
@@ -66,7 +64,7 @@ html {
     margin-top: 0;
 }
 
-#home  div .contenido header .contenido-header nav ul {
+#home div .contenido header .contenido-header nav ul {
     list-style: none;
     display: flex;
     margin-bottom: 0;
@@ -185,7 +183,7 @@ html {
 }
 
 #aboutMe .aboutMe {
-    margin: 60px 40px;
+    margin: 10px 40px;
 }
 
 #aboutMe .aboutMe .title {
@@ -195,7 +193,8 @@ html {
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
-    padding: 40px 0;
+    padding: 30px 0;
+
 }
 
 #aboutMe .aboutMe h2 {
@@ -241,12 +240,13 @@ html {
 }
 
 #service {
+    background-image: linear-gradient(rgba(104, 30, 241, 0.13), rgba(235, 110, 110, 0.5)), url("./imagenes/OIP.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    justify-items: center;
     text-align: center;
-    background-color: #f3f3f3;
     height: 100vh;
 
 }
@@ -254,27 +254,29 @@ html {
 #service .title {
     font-size: 22px;
     text-transform: uppercase;
-    margin-top: 50px;
-    color: #111135;
+    margin-top: 40px;
+    color: #272733;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
+    text-align: center;
 
 }
 
 #service .fila {
     display: flex;
+    max-width: 100vw;
     justify-content: center;
-    justify-items: center;
-    max-width: 1100px;
+    margin-top: 15px;
 
 }
 
 #service .fila .service {
-    max-width: 350px;
+
+    max-width: 420px;
     background-color: #fff;
-    padding: 30px;
-    margin: 0 5px;
+    padding: 20px 0;
+    margin: 5px 20px;
     border-radius: 5px;
     transition: 0.5s;
 }
@@ -308,7 +310,7 @@ html {
 #service .fila .service .tagService {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 15px;
 }
 
@@ -320,31 +322,38 @@ html {
 }
 
 .skillsContainer {
-    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.07)), url("./imagenes/home2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(35, 60, 245, 0.5), rgba(0, 0, 0, 0.5)), url("./imagenes/home2.jpg");
     background-size: cover;
-    background-position: center center;
-    padding: 100px 0;
-    text-align: center;
 }
 
-.skillsContainer h3 {
+.skillsContainer .container {
+    background: linear-gradient(90deg, rgba(141, 27, 40, 0.24) 1%, rgba(1, 0, 46, 0.368) 52%, rgba(0, 132, 255, 0.254) 100%);
+    background-size: cover;
+    background-position: center center;
+    background-size: 400% 300%;
+    animation: bgGradient 5s ease infinite;
+    max-width: 100%;
+    padding-bottom: 2em;
+}
+
+.skillsContainer .container h3 {
     font-size: 30px;
+    text-align: center;
+    padding-top: 80px;
 }
 
 .skillsContainer .skill {
     max-width: 600px;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
-.skillsContainer .skill .info {
+.skillsContainer .container .skill .info {
     display: flex;
     font-weight: bold;
     justify-content: space-between;
 }
 
-.skillsContainer .skill .lista {
+.skillsContainer .container .skill .lista {
     display: inline-block;
     margin-right: 20px;
     height: 10px;
@@ -352,7 +361,7 @@ html {
     background-color: #fff;
 }
 
-.skillsContainer .skill .barra {
+.skillsContainer .container .skill .barra {
     background-color: #919191;
     width: 100%;
     height: 6px;
@@ -360,46 +369,46 @@ html {
 }
 
 /* Este estilo se aplicara luego mediante javascript para lograr la animacion de la barra*/
-.skillsContainer .skill .barra .barra-progreso1 {
-    background-color: #fff;
+.skillsContainer .container .skill .barra .barra-progreso1 {
+    background-color: #ff5080;
     width: 90%;
     height: 6px;
-    animation: progreso1 20s forwards;
+    animation: progreso1 45s forwards;
 }
 
-.skillsContainer .skill .barra .barra-progreso2 {
-    background-color: #fff;
+.skillsContainer .container .skill .barra .barra-progreso2 {
+    background-color: #ff5080;
     width: 90%;
     height: 6px;
-    animation: progreso2 20s forwards;
+    animation: progreso2 45s forwards;
 }
 
-.skillsContainer .skill .barra .barra-progreso3 {
-    background-color: #fff;
+.skillsContainer .container .skill .barra .barra-progreso3 {
+    background-color: #ff5080;
     width: 80%;
     height: 6px;
-    animation: progreso3 20s forwards;
+    animation: progreso3 45s forwards;
 }
 
-.skillsContainer .skill .barra .barra-progreso4 {
-    background-color: #fff;
+.skillsContainer .container .skill .barra .barra-progreso4 {
+    background-color: #ff5080;
     width: 20%;
     height: 6px;
-    animation: progreso4 20s forwards;
+    animation: progreso4 45s forwards;
 }
 
-.skillsContainer .skill .barra .barra-progreso5 {
-    background-color: #fff;
+.skillsContainer .container .skill .barra .barra-progreso5 {
+    background-color: #ff5080;
     width: 20%;
     height: 6px;
-    animation: progreso5 20s forwards;
+    animation: progreso5 45s forwards;
 }
 
-.skillsContainer .skill .barra .barra-progreso6 {
-    background-color: #fff;
+.skillsContainer .container .skill .barra .barra-progreso6 {
+    background-color: #ff5080;
     width: 80%;
     height: 6px;
-    animation: progreso6 20s forwards;
+    animation: progreso6 45s forwards;
 }
 
 /*animaciones de las barras*/
@@ -465,7 +474,9 @@ html {
 
 /* porfolio section */
 #portfolio {
-    max-width: 1100px;
+    background-image: linear-gradient(rgba(104, 30, 241, 0.13), rgba(235, 110, 110, 0.5)), url("./imagenes/OIP.jpg");
+    background-size: cover;
+   
     padding: 100px 0;
     margin: auto;
 }
@@ -533,7 +544,9 @@ html {
 }
 
 #contacs {
-    padding: 100px 15px;
+    padding: 80px 15px;
+    background-image: linear-gradient(rgba(104, 30, 241, 0.13), rgba(235, 110, 110, 0.5)), url("./imagenes/OIP.jpg");
+    background-size: cover;
 }
 
 #contacs .title {
@@ -574,6 +587,7 @@ html {
 
 #contacs .btn-send {
     display: block;
+    width: 120px;
     margin: auto;
     cursor: pointer;
     transition: 0.5s;
@@ -608,10 +622,6 @@ footer a:hover {
 
 /* responsive section*/
 @media screen and (max-width: 800px) {
-    .redes {
-        display: none;
-    }
-
     nav {
         display: none;
     }
@@ -621,9 +631,9 @@ footer a:hover {
         background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
         position: absolute;
-        top: 48px;
+        top: 30px;
         left: 0;
-        padding: 10px 0;
+        padding: 5px 0;
     }
 
     nav.responsive ul {
@@ -635,26 +645,29 @@ footer a:hover {
         margin: 5px 0;
     }
 
-    #icono-nav {
-        display: block;
-    }
-
     #home .contenido .presentacion h2 {
         font-size: 40px;
     }
 
+    #home div .contenido .presentacion a {
+        display: none;
+    }
+
     #aboutMe {
-        padding: 50px 0;
+        padding: 5px 0;
         display: block;
+        
     }
 
     #aboutMe .contenedor-foto {
         max-width: 350px;
-        margin: auto;
+        margin: 150px 0;
+        
     }
 
     #aboutMe .contenedor-foto img {
         padding: 8px;
+        align-self: center;
     }
 
     #aboutMe .aboutMe .title {
