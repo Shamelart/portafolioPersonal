@@ -36,6 +36,7 @@ html {
     background-position: center center;
     background-size: 400% 300%;
     animation: bgGradient 5s ease infinite;
+    
 }
 
 #home div .contenido header {
@@ -107,13 +108,15 @@ html {
 
 #home div .contenido .presentacion {
     max-width: 1100px;
-    height: 100vp;
+    height: 100vh;
     margin: auto;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+
 }
 
 #home div .contenido .presentacion .bienvenida {
@@ -138,10 +141,10 @@ html {
     margin: 50px auto;
 }
 
-#home div .contenido .presentacion .decripcion {
-    max-width: 700px;
+#home div .contenido .presentacion .descripcion {   
     text-align: center;
-    margin: 50px auto;
+    margin: 30px 100px;
+    font-size: 20px
 }
 
 #home div .contenido .presentacion a {
@@ -165,9 +168,10 @@ html {
 #aboutMe {
     max-width: 1100px;
     margin: auto;
-    padding: 100px 15px;
+    padding: 60px 15px;
     color: #111135;
     display: flex;
+    height: 100vh;
 }
 
 #aboutMe .contenedor-foto {
@@ -176,7 +180,7 @@ html {
 }
 
 #aboutMe .contenedor-foto img {
-    padding: 20px;
+    padding: 15px;
     width: 100%;
     border-radius: 20px;
     background-color: #f3f3f3;
@@ -217,7 +221,7 @@ html {
 }
 
 #aboutMe .aboutMe p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 25px;
     color: #565656;
     margin-bottom: 12px;
@@ -317,23 +321,27 @@ html {
 #service .fila .service p {
     font-size: 17px;
     line-height: 25px;
-    padding: 10px auto;
+    padding: 10px 30px;
     margin: auto;
 }
 
 .skillsContainer {
-    background-image: linear-gradient(rgba(35, 60, 245, 0.5), rgba(0, 0, 0, 0.5)), url("./imagenes/home2.jpg");
+    background-image: linear-gradient(rgba(35, 60, 245, 0.577), rgba(218, 26, 26, 0.303)), url("./imagenes/home2.jpg");
     background-size: cover;
+    height: 100vh;
+    margin: auto;
 }
 
 .skillsContainer .container {
-    background: linear-gradient(90deg, rgba(141, 27, 40, 0.24) 1%, rgba(1, 0, 46, 0.368) 52%, rgba(0, 132, 255, 0.254) 100%);
+    background: linear-gradient(90deg, rgba(141, 27, 40, 0.422) 1%, rgba(1, 0, 46, 0.458) 52%, rgba(0, 132, 255, 0.254) 100%);
     background-size: cover;
     background-position: center center;
     background-size: 400% 300%;
     animation: bgGradient 5s ease infinite;
     max-width: 100%;
     padding-bottom: 2em;
+    height: 100vh;
+    width: 100vw;
 }
 
 .skillsContainer .container h3 {
@@ -476,7 +484,6 @@ html {
 #portfolio {
     background-image: linear-gradient(rgba(104, 30, 241, 0.13), rgba(235, 110, 110, 0.5)), url("./imagenes/OIP.jpg");
     background-size: cover;
-   
     padding: 100px 0;
     margin: auto;
 }
@@ -578,11 +585,29 @@ html {
 }
 
 #contacs .form-Container .mitad input {
-    width: 48%;
+    width: 49%;
 }
 
+#contacs .form-Container .redes a{
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+    display: inline-block;
+    padding-left: 25px;
+    font-size: 26px;
+    position: relative;
+    top: -35px;
+    left: 300px;
+}
+#contacs .form-Container .redes a:hover{
+    background-color: #ff5080;
+    color: #fff;
+    padding-left: 1px;
+    transition: 4s;
+    }
+
+
 #contacs .form-Container .input-full {
-    width: 100%;
+    width: 99%;
 }
 
 #contacs .btn-send {
@@ -629,11 +654,34 @@ footer a:hover {
     nav.responsive {
         display: block;
         background-color: rgba(0, 0, 0, 0.8);
-        width: 100%;
         position: absolute;
-        top: 30px;
-        left: 0;
+        top: 48px;
+        right: 0;
         padding: 5px 0;
+    }
+
+    #home div .contenido .presentacion .descripcion {   
+        text-align: center;
+        margin: 50px auto;
+        font-size: 15px
+    }
+    
+
+    #aboutMe{
+        height: fit-content;
+        padding: 5px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #aboutMe .contenedor-foto {
+        max-width: 100px;
+        margin-right: 80px;
+    }
+
+    .contenido-header{
+        display: flex;
     }
 
     nav.responsive ul {
@@ -655,7 +703,6 @@ footer a:hover {
 
     #aboutMe {
         padding: 5px 0;
-        display: block;
         
     }
 
@@ -681,10 +728,12 @@ footer a:hover {
 
     #service {
         padding: 50px 15px;
+        height: fit-content;
     }
 
     #service .fila {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     #service .fila .service {
